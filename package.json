@@ -1,0 +1,23 @@
+{
+  "name": "snapkitty-force-shield",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Adversarial security engineering layer for SnapKitty Sovereign OS",
+  "scripts": {
+    "test":              "node --env-file=.env.local --experimental-strip-types tests/runner.ts",
+    "attack:tunnel":     "node --env-file=.env.local --experimental-strip-types tests/tunnel/url-intercept.ts",
+    "attack:worm":       "node --env-file=.env.local --experimental-strip-types tests/worm/chain-integrity.ts",
+    "attack:discord":    "node --env-file=.env.local --experimental-strip-types tests/discord/sig-bypass.ts",
+    "attack:rate-limit": "node --env-file=.env.local --experimental-strip-types tests/rate-limit/exhaustion.ts",
+    "attack:magma":      "node --env-file=.env.local --experimental-strip-types tests/magma-leak/surface-scan.ts",
+    "attack:nova":       "node --env-file=.env.local --experimental-strip-types tests/nova/consensus-wire.ts",
+    "report":            "node --env-file=.env.local --experimental-strip-types lib/report.ts"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "tweetnacl": "^1.0.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
