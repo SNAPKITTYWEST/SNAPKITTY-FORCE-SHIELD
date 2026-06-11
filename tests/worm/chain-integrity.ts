@@ -38,7 +38,8 @@ async function testForgedEntryRejected(): Promise<ForceShieldResult> {
     }
 
     if (res.status === 404) {
-      return result('worm/forged-entry-rejected', 'HELD', 'CRITICAL', 'WORM ingest endpoint not publicly exposed (404)', '')
+      // 404 means the endpoint doesn't exist — we cannot prove the HMAC check works
+      return result('worm/forged-entry-rejected', 'INCONCLUSIVE', 'CRITICAL', 'WORM ingest endpoint returned 404 — control cannot be verified', 'Ensure /api/worm/ingest exists and rejects forged entries with 401/403')
     }
 
     if (res.ok) {
@@ -53,7 +54,8 @@ async function testForgedEntryRejected(): Promise<ForceShieldResult> {
 
     return result('worm/forged-entry-rejected', 'HELD', 'CRITICAL', `WORM ingest returned ${res.status} for forged entry`, '')
   } catch {
-    return result('worm/forged-entry-rejected', 'HELD', 'CRITICAL', 'WORM ingest not reachable from public surface', '')
+    // Network failure — we cannot determine whether the control works
+    return result('worm/forged-entry-rejected', 'INCONCLUSIVE', 'CRITICAL', 'WORM ingest unreachable — network error, timeout, or DNS failure', 'Check TARGET_URL and ensure the service is running')
   }
 }
 
@@ -90,9 +92,12 @@ async function testTamperedPayloadRejected(): Promise<ForceShieldResult> {
       )
     }
 
+    if (res.status === 404) {
+      return result('worm/tampered-payload-rejected', 'INCONCLUSIVE', 'CRITICAL', 'WORM ingest 404 — tamper detection cannot be verified', 'Ensure /api/worm/ingest exists')
+    }
     return result('worm/tampered-payload-rejected', 'HELD', 'CRITICAL', 'Tampered payload correctly rejected', '')
   } catch {
-    return result('worm/tampered-payload-rejected', 'HELD', 'CRITICAL', 'WORM ingest not reachable', '')
+    return result('worm/tampered-payload-rejected', 'INCONCLUSIVE', 'CRITICAL', 'WORM ingest unreachable — tamper detection cannot be verified', 'Check TARGET_URL and service availability')
   }
 }
 

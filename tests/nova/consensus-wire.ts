@@ -132,7 +132,8 @@ async function testFalseConsensusViaReplay(): Promise<ForceShieldResult> {
 
     return result('nova/replay-deduplication', 'HELD', 'HIGH', `Replay test: r1=${r1}, r2=${r2} — deduplication or auth active`, '')
   } catch {
-    return result('nova/replay-deduplication', 'HELD', 'HIGH', 'WORM ingest not publicly accessible — replay requires internal access', '')
+    // Can't reach ingest — replay deduplication cannot be tested
+    return result('nova/replay-deduplication', 'INCONCLUSIVE', 'HIGH', 'WORM ingest unreachable — replay deduplication cannot be verified', 'Check TARGET_URL and ensure /api/worm/ingest is accessible')
   }
 }
 

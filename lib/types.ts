@@ -1,7 +1,7 @@
 import { createHash } from 'crypto'
 
 export type Severity = 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW'
-export type Status   = 'HELD' | 'BREACHED' | 'INCONCLUSIVE'
+export type Status   = 'HELD' | 'BREACHED' | 'INCONCLUSIVE' | 'ERROR'
 
 export interface ForceShieldResult {
   vector:         string
