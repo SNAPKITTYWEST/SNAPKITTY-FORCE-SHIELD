@@ -88,3 +88,5 @@ This repo is **private**. It contains exact knowledge of SnapKitty OS internals.
 ---
 
 *Force Shield v1.0 — Sealed by SENTINEL. Adversarial twin to DEVFLOW-FINANCE.*
+
+![](https://sovereign-analytics.snapkittywest.workers.dev/canary/SNAPKITTY-FORCE-SHIELD)
