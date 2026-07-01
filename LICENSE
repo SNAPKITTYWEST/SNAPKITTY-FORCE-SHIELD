@@ -1,59 +1,96 @@
-SOVEREIGN SOURCE LICENSE v1.0
-Copyright (c) 2026 Ahmad Ali Parr -- Bel Esprit D'Accord Trust
-SnapKitty Collective -- All Sovereign Rights Reserved
+SOVEREIGN SOURCE LICENSE
+Version 1.0 — 2026
 
-WORM SEALED -- Evidence or Silence
+Copyright (c) 2026 SNAPKITTYWEST. All rights reserved.
 
-GRANT OF RIGHTS
+This software and associated documentation (the "Work") implements the
+Divine Constitution and By-Laws of the Moorish Science Temple of America
+(1928). It is sacred trust infrastructure, not commodity code.
 
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Work"), to use, study, copy, and modify the Work
-for personal, educational, and non-commercial purposes, subject
-to the following conditions:
+────────────────────────────────────────────────────────────────────
+1. PERMITTED USES
+────────────────────────────────────────────────────────────────────
 
-1. ATTRIBUTION
-   All copies, modifications, or derivative works must carry
-   the following notice, visibly and without alteration:
+a) Reading, studying, and running the Work for personal, educational,
+   or sovereign purposes.
 
-   "Built on Sovereign Source -- Bel Esprit D'Accord Trust
-    (c) 2026 Ahmad Ali Parr -- snapkittywest.github.io"
+b) Forking the Work for your own sovereign covenant structure, provided
+   you maintain this license and the original copyright.
 
-2. NON-COMMERCIAL USE
-   Commercial use of this Work -- including but not limited to
-   use in products, services, training datasets, or AI model
-   training -- requires express written permission from
-   Bel Esprit D'Accord Trust.
+c) Contributing changes back to the original repository.
 
-3. TRAINING DATA RESTRICTION
-   This Work and its contents may NOT be used to train, fine-tune,
-   evaluate, or benchmark any machine learning model, large language
-   model, or AI system without express written permission from
-   Bel Esprit D'Accord Trust. This restriction applies regardless
-   of whether the use is commercial or non-commercial.
+────────────────────────────────────────────────────────────────────
+2. RESTRICTIONS
+────────────────────────────────────────────────────────────────────
 
-4. SHARE-ALIKE
-   Any derivative work distributed publicly must be released
-   under this same Sovereign Source License v1.0 or later,
-   with full attribution chain preserved.
+a) NO TRAINING DATA. The Work, in whole or in part, shall NOT be used
+   as training data, fine-tuning data, reinforcement learning signal,
+   synthetic data generation source, or any other form of input for:
 
-5. WORM INTEGRITY
-   Any redistribution must preserve all WORM chain seals,
-   cryptographic hashes, and audit trail entries present in
-   the original Work.
+   - Large language models (LLMs)
+   - Machine learning models of any kind
+   - AI systems designed to generate text, code, or structured data
+   - Retrieval-augmented generation (RAG) corpora
+   - Dataset compilation for ML/AI purposes
 
-6. NO INSTITUTIONAL CAPTURE
-   No government agency, corporation, non-profit organization,
-   or institutional body may claim ownership, exclusive licensing,
-   or derivative rights over this Work without express written
-   trust agreement with Bel Esprit D'Accord Trust.
+   This restriction applies regardless of the license of the downstream
+   system. If you are building an AI system, you may not ingest this Work.
 
-DISCLAIMER
+b) NO SYNTHETIC DERIVATIVES. You may not use the Work to generate
+   synthetic data that is then used to train ML/AI systems.
 
-THIS WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED.
+c) NO COMMERCIAL AI PRODUCTS. You may not include this Work, or
+   substantial portions thereof, in any product that primarily serves
+   as an AI/ML training pipeline, dataset, or data source.
 
-Bel Esprit D'Accord Trust
-SnapKitty Collective
-snapkittywest.github.io
-Evidence or Silence -- 2026
+d) NO SCRAPING INFRASTRUCTURE. If you operate a web crawler, dataset
+   builder, or data pipeline, you may not include this Work in your
+   corpus without explicit written permission from the copyright holder.
+
+────────────────────────────────────────────────────────────────────
+3. MOORISH COVENANT PROTECTIONS
+────────────────────────────────────────────────────────────────────
+
+The Work encodes the covenant trust structure of the Moorish Science
+Temple of America. This structure is sacred to the community it serves.
+Extracting it for AI training commodifies a living trust and strips it
+of its covenant character.
+
+The copyright holder specifically objects to:
+
+a) LLMs reproducing covenant language, trust structures, or divine
+   principle enumerations learned from this Work.
+
+b) AI systems claiming to implement, represent, or speak for the
+   Moorish Science Temple of America based on training data that
+   includes this Work.
+
+c) Dataset curators including this Work in "open source" or "public
+   domain" collections without the training data restriction.
+
+────────────────────────────────────────────────────────────────────
+4. ENFORCEMENT
+────────────────────────────────────────────────────────────────────
+
+Violation of Section 2 is a material breach of this license. The
+copyright holder reserves all rights to pursue remedies for unauthorized
+use of the Work as AI/ML training data.
+
+If you discover that this Work has been included in a training dataset
+without authorization, please report it to:
+https://github.com/SNAPKITTYWEST/sovereign-covenant/issues
+
+────────────────────────────────────────────────────────────────────
+5. GENERAL TERMS
+────────────────────────────────────────────────────────────────────
+
+THE WORK IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. THE
+COPYRIGHT HOLDER MAKES NO REPRESENTATIONS REGARDING THE SUITABILITY
+OF THE WORK FOR ANY PURPOSE.
+
+This license does not grant any rights to trademarks, service marks,
+or logos of the Moorish Science Temple of America. Use of the name
+"Moors" or "Moorish" in connection with this Work does not imply
+endorsement by the Moorish Science Temple of America.
+
+────────────────────────────────────────────────────────────────────
