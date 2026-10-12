@@ -79,13 +79,6 @@ Every test produces a `ForceShieldResult`:
 
 Failed tests are automatically sealed to the WORM chain as security incidents.
 
----
-
-## CLASSIFICATION
-
-This repo is **private**. It contains exact knowledge of SnapKitty OS internals. Never make public. Never commit real credentials. `TARGET_URL` and `HMAC_SECRET` are env vars only.
-
----
 
 *Force Shield v1.0 — Sealed by SENTINEL. Adversarial twin to DEVFLOW-FINANCE.*
 
